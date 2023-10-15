@@ -3,7 +3,7 @@ tries = 0
 
 while True:  
     if tries == 0:
-        print("Enter your guess: ")  
+        print("Enter your guess.")  
     guess = int(input())  
     tries += 1  
 
@@ -13,4 +13,4 @@ while True:
         print("Too low - try again:")
     elif guess == player_guess:
         print("You guessed it in", tries, "tries.")
-        break  
+        break   
