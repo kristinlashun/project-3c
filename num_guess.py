@@ -12,5 +12,8 @@ while True:
     elif guess < player_guess:
         print("Too low - try again:")
     elif guess == player_guess:
-        print("You guessed it in", tries, "tries.")
+        if tries == 1:
+            print("You guessed it in 1 try.")
+        else:
+            print("You guessed it in", tries, "tries.")
         break   
